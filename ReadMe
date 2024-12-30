@@ -3,3 +3,7 @@
     2.) using React packages
 )
 
+React.createElement('' -> tag
+,{} -> give the attribute to our tag
+,'' -> content of tag eg:- hello world using react
+)
