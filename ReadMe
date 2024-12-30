@@ -5,5 +5,9 @@
 
 React.createElement('' -> tag
 ,{} -> give the attribute to our tag
-,'' -> content of tag eg:- hello world using react
+,'' -> children of tag eg:- hello world using react
 )
+
+ReactElement(Object) => HTML(Browser understand)
+
+root.render(heading) --> render function take the object and convert it in to h1 tag and put up inside root element/dom.
