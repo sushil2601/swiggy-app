@@ -1,13 +1,7 @@
-.Create hello world using html, javaScript and react(
-    1.) using cdn links
-    2.) using React packages
-)
+# package uses
 
-React.createElement('' -> tag
-,{} -> give the attribute to our tag
-,'' -> children of tag eg:- hello world using react
-)
-
-ReactElement(Object) => HTML(Browser understand)
-
-root.render(heading) --> render function take the object and convert it in to h1 tag and put up inside root element/dom.
+    1.react
+    2.npm init
+    3.parcel
+    4.npx parcel index.html       --> 
+    5.npx parcel build index.html --> 
