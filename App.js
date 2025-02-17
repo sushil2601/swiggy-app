@@ -1,31 +1,37 @@
 import React from "react"
 import ReactDOM from "react-dom/client"
 
-const heading = React.createElement('h1',{id:'heading'},'Hello World using React')
+// const heading =  React.createElement("h1",{id:'heading'},"React is most Powerfull library.");
 
-const parent = React.createElement(
-    'div',
-    {id:'parent'},
-    [
-        React.createElement(
-            'div',
-            {id:'child1'},
-            [React.createElement('h1',{},"I'm inside h1 tag"),React.createElement('h2',{},"I'm inside h2 tag")]
-        ),
-    
-    React.createElement(
-        'div',
-        {id:'child2'},
-        [React.createElement('h1',{},"I'm inside h1 tag"),React.createElement('h2',{},"I'm inside h2 tag")]
-    )]
+const heading = (<h1>React is most Powerfull library.</h1>)
+
+const Title = () =>(
+    <h1>Hello React friends</h1>
 )
 
-//need of jsx
+const HeadingComponent = () =>{
+    return (
+        <div>
+            
+            <h1>This is functional component</h1>
+        </div>
+    )
+}
+
+const root = ReactDOM.createRoot(document.getElementById("root"));
+
+// root.render(heading);
+root.render(<HeadingComponent />)  //--> way to render component.
 
 
-const root = ReactDOM.createRoot(document.getElementById('root'))
 
+/* 
 
-// createRoot(document.getElementById('root'))
+            {Title()}
+            <Title />
+            <Title>
+            </Title>
 
-root.render(parent)  
+These all three things are same thing .
+
+*/
