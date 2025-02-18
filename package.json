@@ -1,10 +1,25 @@
 {
+  "devDependencies": {
+    "@parcel/resolver-default": "^2.13.3",
+    "process": "^0.11.10"
+  },
+  "dependencies": {
+    "@tailwindcss/postcss": "^4.0.6",
+    "parcel": "^2.13.3",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "tailwindcss": "^4.0.6"
+  },
+  "browserslist": [
+    "last 2 versions"
+  ],
   "name": "swiggy-app",
   "version": "1.0.0",
-  "description": "It is a swiggy app",
+  "description": "This is food ordering app",
+  "main": "App.js",
   "scripts": {
     "start": "parcel index.html",
-    "build" : "parcel build index.html",
+    "build": "parcel build index.html",
     "test": "jest"
   },
   "repository": {
@@ -14,22 +29,10 @@
   "keywords": [
     "react"
   ],
-  "author": "sushil suman",
+  "author": "Sushil Suman",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/sushil2601/swiggy-app/issues"
   },
-  "homepage": "https://github.com/sushil2601/swiggy-app#readme",
-  "devDependencies": {
-    "parcel": "^2.13.3",
-    "process": "^0.11.10"
-  },
-  "dependencies": {
-    "react": "^19.0.0",
-    "react-dom": "^19.0.0"
-  },
-  "browserslist":[
-    "last 2 versions"
-
-  ]
+  "homepage": "https://github.com/sushil2601/swiggy-app#readme"
 }

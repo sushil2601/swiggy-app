@@ -1,37 +1,21 @@
 import React from "react"
 import ReactDOM from "react-dom/client"
+import Header from "./src/components/Header";
+import Body from "./src/components/Body";
 
-// const heading =  React.createElement("h1",{id:'heading'},"React is most Powerfull library.");
 
-const heading = (<h1>React is most Powerfull library.</h1>)
-
-const Title = () =>(
-    <h1>Hello React friends</h1>
-)
-
-const HeadingComponent = () =>{
+const AppLayout = () =>{
     return (
         <div>
-            
-            <h1>This is functional component</h1>
+            <Header />
+            <Body />
         </div>
     )
 }
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
-// root.render(heading);
-root.render(<HeadingComponent />)  //--> way to render component.
+root.render(<AppLayout />)  
 
 
 
-/* 
-
-            {Title()}
-            <Title />
-            <Title>
-            </Title>
-
-These all three things are same thing .
-
-*/
