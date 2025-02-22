@@ -76,7 +76,7 @@ return listOfRestaurants.length === 0 ? (<Shimmer />) : (
             />
 
             <button
-                className='font-bold bg-slate-300 p-2 rounded-lg'
+                className='font-bold bg-slate-300 p-2 -mx-5 rounded-lg'
                 onClick={()=>{
                     const filteredList = listOfRestaurants.filter((res)=>
                         res.info.name.toLowerCase().includes(searchText.toLocaleLowerCase())
@@ -87,9 +87,9 @@ return listOfRestaurants.length === 0 ? (<Shimmer />) : (
             >Search</button>
         </div>
         <div className='px-4 mx-4 items-center'>
-          <label className='py-6 mx-2 font-bold'> UserName : </label>
+          <label className='py-6 mx-2 font-bold text-2xl'> UserName : </label>
           <input
-            className="border border-black p-2 m-2"
+            className="border border-black p-2 m-2 rounded-lg"
             value={loggedInUser}
             onChange={(e) => setUserName(e.target.value)}
           />
