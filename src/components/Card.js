@@ -15,7 +15,8 @@ const Card = (props) => {
     const {deliveryTime} = resData.info.sla
 
   return (
-    <div className='className="m-4 p-4 w-[250px] rounded-lg bg-gray-100 hover:bg-gray-200"'>
+    <div       data-testid="resCard"
+    className='className="m-4 p-4 w-[250px] rounded-lg bg-gray-100 hover:bg-gray-200"'>
       <img 
         className='rounded-lg'
         alt='card-logo'

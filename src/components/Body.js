@@ -69,6 +69,7 @@ return listOfRestaurants.length === 0 ? (<Shimmer />) : (
             <input 
                 className='mx-8 p-2 border border-black rounded-md bg-gray-200'
                 type='text'
+                data-testid="searchInput"
                 value={searchText}
                 onChange={(e)=>{
                     setSearchText(e.target.value)
